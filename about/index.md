@@ -5,28 +5,16 @@ title: About
 
 <img src="portrait.jpg" width="50%" align="right">
 
-Hello. My name is Rasmus Andersson. I'm a Swedish maker living in San Francisco with a passion for art and technology, who have worked with a number of different companies since the 1990s, including 
-[Dropbox](https://www.dropbox.com/jobs/product/design),
-[Facebook](https://facebook.com/design),
-[Spotify](https://www.spotify.com/),
-[Lear Corporation](http://lear.com/),
-Spray, and my own company Notion.
-More information can be found through [LinkedIn](http://www.linkedin.com/in/rasmusandersson).
-
-I currently work at [Figma](https://www.figma.com/) building the next-generation interaction design tool.
-
-- [Read more about my work with Spotify &rarr;](/about/spotify/)
-- [Some of my favorite technical papers &rarr;](https://www.dropbox.com/sh/is0sy5350lr4v9j/AADQlhVSQcRw6vCNKQgGWelqa)
-
+Hello. My name is Justin Plasmeier. I'm a Math and Computer Science student at [Case Western Reserve University](https://case.edu/) and a web development consultant currently working for [Concepts Collective, LLC](https://conceptscollective.com). I love learning about and using new technologies, so I made this blog to document my learning experiences.
 
 ## Elsewhere
 
-You can find me on a variety of world wild interweb sites where my username is usually "rsms".
+You can find me on a variety of world wild interweb sites where my username is either *jplasmeier* or *justinplasmeier*.
 
-- [Twitter](http://twitter.com/rsms) — a good way to make contact
-- [GitHub](https://github.com/rsms) — code, juicy code
-- [Instagram](http://instagram.com/rasmusfabbe/) — short stories via photo snapshots
-- [Flickr](http://www.flickr.com/photos/rsms/) — photography
-- [Facebook](http://www.facebook.com/rsms) — friends and foes
+- [Twitter](http://twitter.com/justinplasmeier) — how I keep up with the tech world
+- [GitHub](https://github.com/justinplasmeier) — code, glorious code!
+- [Instagram](http://instagram.com/justinplaz/) — mostly just memories now
+- [LinkedIn](http://linkedin.com/in/jplasmeier) — add me to your professional network!
+- [Facebook](http://www.facebook.com/jplasmeier) — friends and foes
 
-### [<img src="/res/twitter.png" width="29" height="20" style="display:inline-block;vertical-align:middle"> @rsms](http://twitter.com/rsms)
+### [<img src="/res/twitter.png" width="29" height="20" style="display:inline-block;vertical-align:middle"> @justinplasmeier](http://twitter.com/justinplasmeier)

@@ -273,12 +273,12 @@ a.post-excerpt {
   a.post-excerpt:nth-child(2) div.padded-content {
     padding-top: 60px;
   }
-  a.post-excerpt:nth-child(odd) div.padded-content {
+ /* a.post-excerpt:nth-child(odd) div.padded-content {
     padding-right:40px;
   }
   a.post-excerpt:nth-child(even) div.padded-content {
     padding-left:40px;
-  }
+  }*/
   a.post-excerpt.photo {
     height:400px;
     position:relative;
@@ -601,7 +601,10 @@ footer {
 
 /* iPhone et al */
 @media only screen and (max-device-width: 480px) {
-  header {
+.logo {
+	padding-bottom:22px;
+}   
+header {
     height: 120px;
     margin:0 1em 0 0.8em;
   }
