@@ -1,0 +1,81 @@
+# Using Beaker to hack my Homework
+
+
+### Motivation
+Today in my High Performance Computing class, my professor explained how we are supposed to complete the first homework assignment. The instructions were to run code in Java, save the results to a file, visualize the results as line plots using MATLAB or Python, and write a report preferably using LaTeX. 
+
+Now, one could do basic workflow automation simply write Java code to write the data out to a specific file (and location) to be read by the MATLAB or Python script. However, this seemed tedious and required writing annoying boilerplate code to drag files around. So like any good hacker, I sought an "easier" solution and an opportunity to learn a new technology and decided to implement my homework workflow (homeworkflow?) using Beaker by Two Signma.
+
+From [their website,][two sigma] Two Sigma describes their product as:
+>Notebook-style development provides a more exploratory way to write code than with traditional IDEs. Notebook interfaces are comprised of a series of code blocks, called cells, which can stand alone or act in unison. The development process is one of discovery, where a developer experiments in one cell, then can continue to write code in a subsequent cell depending on results from the first. Particularly when analyzing large datasets, this conversational approach allows researchers to quickly discover patterns or other artifacts of the data.
+
+While my first assignment does not involve any serious data science, being able to freely switch between languages within the same file seemed like a good way to simplify the code for my homework by avoiding boilerplate file management code. 
+
+
+### Python
+While the original problem specification was meant for Java, I ran into some issues with the auto-translation of data through the ```beaker``` object. My professor had permitted us to use Python for the algorithms, and once I configured Beaker to find Python 3, I rewrote the Java in to Python:
+
+```Python
+import time
+beaker.python_times = []
+times = []
+for trial in range(0,5):
+    start = time.process_time()
+    inc = 0
+    for x in range(0, 10000000):
+        #ADD CODE HERE
+        pass
+    elapsed = time.process_time() - start
+    print (elapsed)
+    times.append(elapsed)
+    
+print ("Elapsed:")
+beaker.python_times = times
+print (beaker.python_times)
+```
+The assignment was simple; the program simply counted the time it took to run a lengthy ```for``` loop. However, I needed a way to generate the output into a report.
+
+### Output Generation
+
+At first I wanted to use $$\KaTeX$$ (the implementaion TeX used by Beaker) to format the data into a report. However, as with Java, I was not able to get the ```beaker``` object to be read by $$\KaTeX$$. After looking around at various examples, I settled for using JavaScript to populate an HTML document:
+
+```html
+<h3>
+  1a.
+</h3>
+<div>
+  <p>
+    Python, 10,000,000 iterations, "//ADD CODE HERE": 
+  </p>
+  <p>
+    Times: 
+  </p>
+  <ul id ="tlist1">
+    
+  </ul>
+  <p>
+    Average: <span id="avg1"></span>
+  </p>
+</div>
+```
+
+### The Beaker Object
+
+Beaker makes use of a globally-scoped variable denoted ```beaker``` to juggle variables between programming. In the Python code above, observe when the list of times in Python is stored in ```beaker.python_times```. To render this data, the ```beaker``` object is then referenced from JavaScript:
+
+```javascript
+var times = beaker.python_times;
+var total = 0;
+for (i = 0; i < 5; i++) {
+  total += times[i];
+  document.getElementById("tlist1").innerHTML += ("<li>" + times[i] + "</li>");
+}
+document.getElementById("avg1").innerHTML = total/times.length;
+```
+
+From the examples I looked at it seemed like the best way to handle variables was to load data from the ```beaker``` object into a native data structure then manipulate the data from there. 
+
+### Results
+
+   [two sigma]: <http://beakernotebook.com/>
+
