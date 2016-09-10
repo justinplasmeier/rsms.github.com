@@ -183,8 +183,8 @@ In the future, we will explore more complicated recursive algorithms as well as 
 
 "If I have seen further it is by standing on the sholders [sic] of Giants." - Sir Issac Newtown (and many before him)
 
-[5 Ways of Fibonacci in ](https://technobeans.wordpress.com/2012/04/16/5-ways-of-fibonacci-in-python/)
+[5 Ways of Fibonacci in Python](https://technobeans.wordpress.com/2012/04/16/5-ways-of-fibonacci-in-python/)
 
 [Fibonacci Sum with Memoization](http://codereview.stackexchange.com/questions/95554/fibonacci-sum-with-memoization)
 
-[Memoized Recursive Fibonacci in ](http://ujihisa.blogspot.com/2010/11/memoized-recursive-fibonacci-in-python.html)
+[Memoized Recursive Fibonacci in Python](http://ujihisa.blogspot.com/2010/11/memoized-recursive-fibonacci-in-python.html)
