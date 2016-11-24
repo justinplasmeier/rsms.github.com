@@ -5,7 +5,7 @@ description: ""
 redirect_from: ["/2016/11/23/applephotos.html"]
 
 ---
-Today I learned that Apple Photos does not display your photos. Instead, it displays a compressed version thereof. I assume this is done to save space and time, but it doesn't make sense for an application meant to display your photos. 
+Today I learned that Apple Photos does not display your photos. Instead, it displays a compressed version thereof. I assume this is done to save space and time, but I think that it defeats the purpose of an application meant to display your photos. 
 
 For example, the next photo is a screen shot of a photo (cropped) that I took with my Sony a5000. The first copy is from Photos, the second on Preview:
 
