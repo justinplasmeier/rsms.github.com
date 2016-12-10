@@ -2,7 +2,7 @@
 title: "Combining Diacritical Marks"
 layout: post
 description: "Adventures in Unicode"
-redirect_from: ["/2016/12/10/combiningmarks.html"]
+redirect_from: ["/2016/12/10/combining-marks.html"]
 
 ---
 While working on Mass Media Sync, I kept getting a weird bug that an album was not found, despite its presence. The comparison to find the album was being done with the Google Drive `'title'` metadata attribute and the name of the album's directory. On debugging, the two names _looked_ exactly identical.:
@@ -34,7 +34,7 @@ The first string begins with the character `A` followed by `%u0301` which is cod
 
 There we have it. Upon further research, `%u0301` is part of a unicode block known as [Combining Diacritical Marks](https://en.wikipedia.org/wiki/Combining_Diacritical_Marks).
 
-### `os.mkdir`
+### os.mkdir
 
 So why were the strings different in the first place? I tracked the difference in representation down to a call to `os.mkdir` in the Python Standard Library's `os` module. When the string with character `C1` was being passed to `os.mkdir`, the directory created had the string with `A` and the combining mark as its name. I'm not sure why this happens, but my guess is something in POSIX/UNIX or MacOS doesn't like having certain unicode characters as directory names. However, this doesn't explain why (seemingly, at least) more complicated unicode is used instead. 
 
