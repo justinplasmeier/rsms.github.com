@@ -5,7 +5,9 @@ title: About
 
 <img src="portrait.jpg" width="50%" align="right">
 
-Hi! My name is Justin Plasmeier. I'm a Math and Computer Science student at [Case Western Reserve University](https://case.edu/) and a software engineer currently working for [Concur](https://www.concur.com/). I love learning about and using new technologies, so I made this blog to document my learning experiences.
+Hi! My name is Justin Plasmeier. I'm a Math and Computer Science student at [Case Western Reserve University](https://case.edu/) and a software engineer. I love learning about and using new technologies, so I made this blog to document my learning experiences.
+
+Outside of tech, I enjoy rock climbing, drinking coffee, listening to music, photography, and philosophy. 
 
 ## Elsewhere
 
